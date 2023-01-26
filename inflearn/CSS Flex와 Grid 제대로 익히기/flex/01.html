@@ -9,23 +9,36 @@
   <style>
     .flex-container {
         display: flex;
-        flex-direction: column;
       }
-    @media (min-width: 600px) {
-      .flex-container {
-        flex-direction: row;
-      }
-      .flex-item {
-        flex: 1;
-      }
+    .flex-item:nth-child(1) {
+      /* flex: 1; */
+      /* flex: 1 1 0; */
+      width: 20%;
     }
-  </style>
+    .flex-item:nth-child(2) {
+      /* flex: 3; */
+      /* flex: 3 1 0; */
+      width: 60%;
+    }
+    .flex-item:nth-child(3) {
+      /* flex: 1; */
+      /* flex: 1 1 0; */
+      width: 20%;
+    }
+    .flex-item p {
+      white-space: nowrap;
+    }
+    </style>
 </head>
 <body>
   <div class="flex-container">
-    <div class="flex-item">AAAAAAAAAAAA</div>
-    <div class="flex-item">BBB</div>
-    <div class="flex-item">CCCCCCC</div>
+    <div class="flex-item">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt eligendi cum corrupti quisquam quam perspiciatis, cumque quos esse numquam earum recusandae assumenda aspernatur animi corporis fugiat sequi eveniet, cupiditate facilis veniam nobis debitis magni reprehenderit maxime. Ullam quisquam possimus aliquam id, placeat est soluta recusandae aut repudiandae, suscipit impedit.
+      </p>
+    </div>
+    <div class="flex-item">BBBBB</div>
+    <div class="flex-item">CCCCCCCCCCCCCC</div>
   </div>
 </body>
 </html>
