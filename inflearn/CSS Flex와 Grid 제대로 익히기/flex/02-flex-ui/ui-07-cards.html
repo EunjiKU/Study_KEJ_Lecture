@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./default.css">
+  <!-- <link rel="stylesheet" href="./ui.css"> -->
+  <style>
+    .card-list .card-item {
+      margin-bottom: 2rem;
+    }
+    .card-list .card-item .card-image {
+      height: 0;
+      padding-bottom: 60%;
+      background-color: lightgray;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .card-list .card-item .card-image img {
+      display: none;
+    }
+    .card-list .card-item .card-desc {
+      padding: 1em;
+      background-color: #fff;
+    }
+
+    @media (min-width: 600px) {
+      .card-list-con {
+        overflow-x: hidden;
+      }
+      .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+      }
+      .card-list .card-item {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 1rem;
+      }
+      .card-list .card-item .card-desc {
+        flex: auto;
+        /* flex: 1 1 auto; */
+        /* flex-grow: 1; */
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .card-list .card-item {
+        width: 33.3%;
+      }
+    }
+
+    /* .card-list {
+      display: flex;
+    } */
+  </style>
+</head>
+<body>
+  <!-- ❗❗ 카드 리스트의 이미지는 일반적으로 DB에 있는 이미지를 불러오기 때문에 인라인 CSS로 넣는 것이 합리적이다. -->
+  <div class="card-list-con">
+    <ul class="card-list">
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+      <li class="card-item">
+        <figure class="card-image" style="background-image: url('./images/ilbuni.png')">
+          <img src="./images/ilbuni.png" alt="일분이">
+        </figure>
+        <div class="card-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cumque!
+        </div>
+      </li>
+    </ul>
+</div>]
+</body>
+</html>

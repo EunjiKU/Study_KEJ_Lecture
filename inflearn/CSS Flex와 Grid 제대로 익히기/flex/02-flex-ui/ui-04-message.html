@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./default.css">
+  <!-- <link rel="stylesheet" href="./ui.css"> -->
+  <style>
+    body {
+      padding: 2em;
+    }
+    .user-item {
+      display: flex;
+      margin-bottom: 1.5em;
+    }
+    .user-photo {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      margin-right: 0.5em;
+      border: 2px solid #333;
+      border-radius: 50%;
+      background-color: gold;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <ul class="user-list message-list">
+    <li class="user-item message-item">
+      <!-- ❗❗ 가로와 세로등 크기가 다른 이미지가 들어올 수 있기 때문에 backgorund로 넣는다. -->
+      <!-- ❗❗ DB에서 데이터를 불러와서 들어가는 이미지이기 때문에 인라인 스타일로 넣는다. -->
+      <figure class="user-photo" style="background-image: url('./images/ilbuni.png');"></figure>
+      <p class="message-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi excepturi nesciunt. Praesentium quisquam, id error suscipit, iste ipsa culpa temporibus porro ducimus commodi dolorum voluptatibus. Labore quaerat repudiandae iusto voluptate, qui maxime beatae autem tempore adipisci magni, velit quae.
+      </p>
+    </li>
+    <li class="user-item message-item">
+      <figure class="user-photo" style="background-image: url('./images/ilbuni.png');"></figure>
+      <p class="message-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod provident sed quam odit nulla expedita ducimus eaque amet veniam.
+      </p>
+    </li>
+    <li class="user-item message-item">
+      <figure class="user-photo" style="background-image: url('./images/ilbuni.png');"></figure>
+      <p class="message-content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci non qui aliquam praesentium ipsam consectetur nulla esse, obcaecati minima facere dolor, similique enim voluptatum quos eaque id velit provident labore? Molestiae?
+      </p>
+    </li>
+  </ul>
+</body>
+</html>

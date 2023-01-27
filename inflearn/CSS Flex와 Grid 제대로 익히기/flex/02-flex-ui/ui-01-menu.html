@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./default.css">
+  <!-- <link rel="stylesheet" href="./ui.css"> -->
+  <style>
+    .menu {
+      display: flex;
+    }
+    .menu .menu-item {
+      /* ❗ ex때문에 width로... ❗ */
+      width: 25%;
+      /* flex: 1; */
+      background-color: gold;
+      transition: .5s;
+    }
+    .menu .menu-item:hover {
+      width: 35%;
+      /* flex: 1.5; */
+      background-color: crimson;
+    }
+    .menu .menu-item .menu-link {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .menu .menu-item:hover .menu-link {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li class="menu-item"><a href="#" class="menu-link">HOME</a></li>
+    <li class="menu-item"><a href="#" class="menu-link">ABOUT</a></li>
+    <li class="menu-item"><a href="#" class="menu-link">PRODUCT</a></li>
+    <li class="menu-item"><a href="#" class="menu-link">CONTACT</a></li>
+  </ul>
+</body>
+</html>

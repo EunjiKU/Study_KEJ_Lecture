@@ -9,36 +9,43 @@
   <style>
     .flex-container {
         display: flex;
+        flex-wrap: wrap;
       }
+    .flex-item {
+      flex: 1 1 auto;
+    }
     .flex-item:nth-child(1) {
       /* flex: 1; */
       /* flex: 1 1 0; */
       width: 20%;
+      /* flex: 0 1 20%; */
     }
     .flex-item:nth-child(2) {
       /* flex: 3; */
       /* flex: 3 1 0; */
       width: 60%;
+      /* flex: 0 1 60%; */
     }
     .flex-item:nth-child(3) {
       /* flex: 1; */
       /* flex: 1 1 0; */
       width: 20%;
+      /* flex: 0 1 20%; */
     }
     .flex-item p {
-      white-space: nowrap;
+      /* white-space: nowrap; */
     }
     </style>
 </head>
 <body>
   <div class="flex-container">
     <div class="flex-item">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt eligendi cum corrupti quisquam quam perspiciatis, cumque quos esse numquam earum recusandae assumenda aspernatur animi corporis fugiat sequi eveniet, cupiditate facilis veniam nobis debitis magni reprehenderit maxime. Ullam quisquam possimus aliquam id, placeat est soluta recusandae aut repudiandae, suscipit impedit.
+      <p>edita rerum aut fugit distinctio dolori et adipisci sapiente molestiae accusantium autem ullam, voluptates dolor obcaecati. Unde adipisci natus excepturi, saepe corporis, perspiciatis, dolor provident aliquam quaerat eius enim? Harum unde cum amet et.
       </p>
     </div>
-    <div class="flex-item">BBBBB</div>
-    <div class="flex-item">CCCCCCCCCCCCCC</div>
+    <div class="flex-item">BBB</div>
+    <div class="flex-item">CCCCCCCC</div>
+    <div class="flex-item">DDDDDDDDDDDDDDDDD</div>
   </div>
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./default.css">
+  <!-- <link rel="stylesheet" href="./ui.css"> -->
+  <style>
+    body {
+      padding: 30px;
+    }
+    .search-form {
+      display: flex;
+      height: 40px;
+    }
+    .search-form input[type="search"] {
+      flex: 1;
+      margin-right: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.3rem;
+      outline: none;
+    }
+    .search-form input[type="text"]:focus {
+      border: 1px solid #555;
+    }
+    .search-form input[type="submit"] {
+      /* flex: 0 0 60px; */
+      width: 4em;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: .3rem;
+      background-color: gold;
+      transition: .3s;
+      cursor: pointer;
+    }
+    .search-form input[type="submit"]:hover {
+      color: #fff;
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <form class="search-form">
+    <input type="search">
+    <input type="submit" value="찾기">
+  </form>  
+</body>
+</html>
