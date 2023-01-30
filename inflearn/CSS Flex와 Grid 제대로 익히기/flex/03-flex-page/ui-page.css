@@ -1,0 +1,7 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+/* .header .website-title {
+  margin-right: auto;
+} */
