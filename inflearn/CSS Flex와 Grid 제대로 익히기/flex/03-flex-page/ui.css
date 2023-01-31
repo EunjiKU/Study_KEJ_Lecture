@@ -5,6 +5,9 @@
 }
 .search-form input[type="search"] {
   flex: 1;
+  /* input 자체적으로 기본적인 최소 폭(min-width)를 갖고 있어서, 해당 엘리먼트를 감싸고 있는 부모 요소의 크기가 그것보다 작아지면 스크롤이 생길 수 있는데.. */
+  /* 그것 때문에 인풋의 min-width를 강제로 0으로 세팅!!! */
+  min-width: 0;
   margin-right: 10px;
   font-size: 1rem;
   border: none;
@@ -37,7 +40,7 @@
 .menu .menu-item {
   width: 25%;
   background-color: gold;
-  transition: .5s;
+  transition: background .5s;
 }
 .menu .menu-item:hover {
   width: 35%;
@@ -142,4 +145,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+/* modal */
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+}
+.dialog {
+  width: 50vw;
+  padding: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+  border-radius: 1em;
+  background-color: #fff;
 }
