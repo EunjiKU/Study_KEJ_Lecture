@@ -9,9 +9,12 @@
   <style>
     .grid-container {
       display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+      grid-auto-rows: minmax(100px, auto);
+      gap: 1rem;
     }
     .grid-item {
-      display: inline-block;
     }
   </style>
 </head>
@@ -21,11 +24,14 @@
     <div class="grid-item">B</div>
     <div class="grid-item">C</div>
     <div class="grid-item">D</div>
-    <div class="grid-item">E</div>
+    <div class="grid-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, possimus dolorum fugit sapiente fuga tempore deleniti sit laboriosam, impedit minima laudantium esse distinctio sed deserunt architecto recusandae sint porro qui illo voluptatem! Sequi nam optio quibusdam maxime consequatur dolor tempore, quis dolorum, earum pariatur accusamus sit exercitationem tenetur, est vitae.</div>
     <div class="grid-item">F</div>
     <div class="grid-item">G</div>
     <div class="grid-item">H</div>
     <div class="grid-item">I</div>
+    <div class="grid-item">노노</div>
+    <div class="grid-item">노노</div>
+    <div class="grid-item">노노</div>
   </div>
 </body>
 </html>
