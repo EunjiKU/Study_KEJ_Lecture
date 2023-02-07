@@ -1,0 +1,153 @@
+/* header */
+.search-form {
+  display: flex;
+  height: 40px;
+}
+.search-form input[type="search"] {
+  flex: 1;
+  /* input 자체적으로 기본적인 최소 폭(min-width)를 갖고 있어서, 해당 엘리먼트를 감싸고 있는 부모 요소의 크기가 그것보다 작아지면 스크롤이 생길 수 있는데.. */
+  /* 그것 때문에 인풋의 min-width를 강제로 0으로 세팅!!! */
+  min-width: 0;
+  margin-right: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+}
+.search-form input[type="text"]:focus {
+  border: 1px solid #555;
+}
+.search-form input[type="submit"] {
+  width: 4em;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: .3rem;
+  background-color: gold;
+  transition: .3s;
+  cursor: pointer;
+}
+.search-form input[type="submit"]:hover {
+  color: #fff;
+  background-color: crimson;
+}
+
+
+/* menu */
+.menu {
+  display: flex;
+}
+.menu .menu-item {
+  width: 25%;
+  background-color: gold;
+  transition: background .5s;
+}
+.menu .menu-item:hover {
+  width: 35%;
+  background-color: crimson;
+}
+.menu .menu-item .menu-link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #555;
+}
+.menu .menu-item:hover .menu-link {
+  color: #fff;
+}
+
+
+/* primary */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  gap: 2%;
+}
+
+.card-list .card-item {
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+.card-list .card-item .card-image {
+  height: 0;
+  padding-bottom: 60%;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-list .card-item .card-image img {
+  display: none;
+}
+.card-list .card-item .card-desc {
+  padding: 1em;
+}
+
+
+
+/* secondary-a */
+.info-list {
+  flex-direction: column;
+}
+.info-list-item {
+  display: flex;
+  margin: 0.5em 0;
+}
+.info-list-item::before {
+  content: "✔";
+  margin-right: 0.5em;
+}
+.friend-item {
+  align-items: center;
+}
+.user-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+/* secondary-b */
+.user-item {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+.user-photo {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: gold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* modal */
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+}
+.dialog {
+  width: 50vw;
+  padding: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+  border-radius: 1em;
+  background-color: #fff;
+}

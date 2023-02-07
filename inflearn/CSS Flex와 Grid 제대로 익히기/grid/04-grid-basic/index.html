@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./default.css">
+  <!-- CSS -->
+  <style>
+
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* place-items: center center; */
+
+  }
+
+  /* ❗ 헤더 컨텐츠 푸터 ❗ */
+  /* .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "a main b"
+      ". . ."
+      "footer footer footer"
+      ;
+  }
+  .header {grid-area: header;}
+  .sidebar-a {grid-area: a;}
+  .sidebar-b {grid-area: b;}
+  .main {grid-area: main;}
+  .footer {grid-area: footer;} */
+  /* ❗ 헤더 컨텐츠 푸터 ❗ */
+  
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">D</div>
+    <div class="grid-item">E</div>
+    <div class="grid-item">F</div>
+    <div class="grid-item">G</div>
+    <div class="grid-item">H</div>
+    <div class="grid-item">I</div>
+    <!-- <div class="grid-item">J</div>
+    <div class="grid-item">K</div> -->
+  </div>
+
+  <!-- ❗ 헤더 컨텐츠 푸터 ❗ -->
+  <!-- <div class="grid-container">
+    <header class="grid-item header">HEADER</header>
+    <div class="grid-item sidebar-a">SIDEBAR-A</div>
+    <div class="grid-item sidebar-b">SIDEBAR-B</div>
+    <div class="grid-item main">MAIN</div>
+    <footer class="grid-item footer">FOOTER</footer>
+  </div> -->
+  <!-- ❗ 헤더 컨텐츠 푸터 ❗ -->
+</body>
+</html>

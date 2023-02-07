@@ -1,0 +1,147 @@
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 1rem;
+}
+.header .search-form {
+  width: 300px;
+  max-width: 60%;
+  margin-right: 3rem;
+  /* ❗ margin-left: auto; */
+}
+
+
+/* menu */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+  .menu .menu-item{
+    width: 100% !important;
+  }
+}
+
+
+/* primary */
+.primary {
+  padding: 1rem;
+}
+.card-item {
+  transition: all .3s;
+}
+
+
+/* secondary */
+.secondary {
+  padding: 1rem;
+}
+.user-list {
+  /* margin-bottom: 2rem; */
+  /* background-color: red; */
+}
+
+
+/* secondary-a */
+.secondary-a {
+  background-color: #fff;
+}
+
+
+/* secondary-b */
+.secondary-b {
+  color: #fff;
+  background-color: #666;
+}
+
+
+/* footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid lightgray;
+}
+
+
+/* modal */
+/* .test {color: blue;} */
+/* #modal-switch:checked ~ .test {color: red;} */
+
+.modal {
+  top: 80px;
+  display: none;
+}
+#modal-switch:checked  ~ .modal {
+  display: flex;
+}
+#modal-switch:checked ~ label[for="modal-switch"]:before {
+  content: "🌹";
+}
+label[for="modal-switch"] {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+label[for="modal-switch"]:before {
+  content: "🌸";
+  font-size: 1.4rem;
+  transition: transform .4s;
+}
+label[for="modal-switch"]:hover:before {
+  transform: rotate(180deg) scale(1.2);
+}
+#modal-switch, label[for="modal-switch"] span {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  /* ❗ 스크린리더, SEO 등의 이유로 */
+  /* ❗ display: none;이나 */
+  /* ❗ width: 0; 등의 사용은 피해야한다. */
+  /* ❗ 크롬에서는 이 상태로 클릭하면 모달이 하단에 위치하는 문제가 있어서, top: 0;을 추가  */
+}
+
+
+/*  */
+@media (min-width: 1024px){
+  .page {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-areas: 
+      'header header header'
+      'menu menu menu'
+      'secondary-a primary secondary-b'
+      'footer footer footer';
+  }
+  .header {
+    grid-area: header;
+  }
+  .menu {
+    grid-area: menu;
+  }
+  .primary {
+    grid-area: primary;
+  }
+  .secondary-a {
+    grid-area: secondary-a;
+  }
+  .secondary-b {
+    grid-area: secondary-b;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+@media (min-width: 1400px){
+  .primary {
+  }
+}
